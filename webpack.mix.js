@@ -19,10 +19,10 @@ mix.js("resources/js/app.js", "public/js")
     .vue()
     .extract()
     .webpackConfig({
-        externals: {},
         output: {
             // publicPath: "/laravel-vue-minimal/public/", // 不加會噴錯
-            publicPath: "/~steve_tsao/switch-components/public/",
+            // publicPath: "/~steve_tsao/switch-components/public/",
+            publicPath: "/switch-components/public/",
             chunkFilename: "js/chunk/[name].js?v=[contenthash]" // 分割文件存放位置
         }
     })

@@ -1,8 +1,13 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/manifest.js": "/js/manifest.js",
-    "/js/chunk/Component1.js?v=eb4e355ec4fc6c674238": "/js/chunk/Component1.js?v=eb4e355ec4fc6c674238",
-    "/js/chunk/Component2.js?v=86165c70628dd88e054a": "/js/chunk/Component2.js?v=86165c70628dd88e054a",
+    "/js/chunk/Component1.js?v=6e35dc2c4e303f9ff093": "/js/chunk/Component1.js?v=6e35dc2c4e303f9ff093",
+    "/js/chunk/Component2.js?v=bc44c3743cc4982b3474": "/js/chunk/Component2.js?v=bc44c3743cc4982b3474",
     "/css/app.css": "/css/app.css",
-    "/js/vendor.js": "/js/vendor.js"
+    "/js/vendor.js": "/js/vendor.js",
+    "/js/chunk/Dashboard.js?v=d785d90dfa0f4cd5fa27": "/js/chunk/Dashboard.js?v=d785d90dfa0f4cd5fa27",
+    "/js/chunk/Dashboard.js?v=109e8ec18fc07bf74668": "/js/chunk/Dashboard.js?v=109e8ec18fc07bf74668",
+    "/js/chunk/Component1.js?v=0e9f16de180ce588b761": "/js/chunk/Component1.js?v=0e9f16de180ce588b761",
+    "/js/chunk/Component1.js?v=f02d51e8a68f0bf60f2a": "/js/chunk/Component1.js?v=f02d51e8a68f0bf60f2a",
+    "/js/chunk/Component1.js?v=53089dda6fd4dd9e735c": "/js/chunk/Component1.js?v=53089dda6fd4dd9e735c"
 }
