@@ -12,6 +12,11 @@ const routes = [
         path: "/component2",
         component: config.Component2,
         name: "Component2"
+    },
+    {
+        path: "/dashboard",
+        component: config.Dashboard,
+        name: "dashboard"
     }
 ];
 

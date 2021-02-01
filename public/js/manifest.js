@@ -43,6 +43,18 @@
 /******/ 	// It's empty as some runtime module handles the default behavior
 /******/ 	__webpack_require__.x = x => {};
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -73,7 +85,7 @@
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/chunk/" + chunkId + ".js?v=" + {"Component1":"eb4e355ec4fc6c674238","Component2":"86165c70628dd88e054a"}[chunkId] + "";
+/******/ 			return "js/chunk/" + chunkId + ".js?v=" + {"Component1":"53089dda6fd4dd9e735c","Component2":"bc44c3743cc4982b3474","Dashboard":"109e8ec18fc07bf74668"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -171,7 +183,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/~steve_tsao/switch-components/public/";
+/******/ 		__webpack_require__.p = "/switch-components/public/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
