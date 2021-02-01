@@ -1,6 +1,7 @@
 const routes = [
+    { path: "/", redirect: "/component1" },
     {
-        path: "/",
+        path: "/component1",
         component: () =>
             import(
                 /* webpackChunkName: 'Component1' */ "../components/Component1"

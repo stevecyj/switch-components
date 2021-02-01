@@ -23,7 +23,7 @@ mix.js("resources/js/app.js", "public/js")
         output: {
             // publicPath: "/laravel-vue-minimal/public/", // 不加會噴錯
             publicPath: "/~steve_tsao/switch-components/public/",
-            chunkFilename: "js/chunk/[name].js?v=[chunkHash]" // 分割文件存放位置
+            chunkFilename: "js/chunk/[name].js?v=[contenthash]" // 分割文件存放位置
         }
     })
     .sourceMaps();
