@@ -24,5 +24,9 @@ export default {
     Component2: () =>
         import(/* webpackChunkName: 'Component2' */ "../components/Component2"),
     Dashboard: () =>
-        import(/* webpackChunkName: 'Dashboard' */ "../views/Dashboard")
+        import(/* webpackChunkName: 'Dashboard' */ "../views/Dashboard"),
+    Events: () => import(/* webpackChunkName: 'Events' */ "../views/Events"),
+    Card: () => import(/* webpackChunkName: 'Card' */ "../components/Card"),
+    Chart: () => import(/* webpackChunkName: 'Chart' */ "../components/Chart"),
+    Table: () => import(/* webpackChunkName: 'Table' */ "../components/Table")
 };

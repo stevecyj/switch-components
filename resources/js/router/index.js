@@ -6,17 +6,39 @@ const routes = [
     {
         path: "/component1",
         component: config.Component1,
-        name: "Component1"
+        name: "component1"
     },
     {
         path: "/component2",
         component: config.Component2,
-        name: "Component2"
+        name: "component2"
     },
     {
         path: "/dashboard",
         component: config.Dashboard,
-        name: "dashboard"
+        name: "dashboard",
+        children: [
+            {
+                path: "card",
+                component: config.Card,
+                name: "card"
+            },
+            {
+                path: "chart",
+                component: config.Chart,
+                name: "chart"
+            },
+            {
+                path: "table",
+                component: config.Table,
+                name: "table"
+            }
+        ]
+    },
+    {
+        path: "/events",
+        component: config.Events,
+        name: "events"
     }
 ];
 
