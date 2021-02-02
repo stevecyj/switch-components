@@ -8,9 +8,14 @@ import App from "./views/app.vue";
 
 Vue.use(VueRouter);
 
-const app = new Vue({
-    el: "#app",
+// const app = new Vue({
+//     el: "#app",
+//     router,
+//     // store,
+//     components: { App },
+// });
+
+new Vue({
     router,
-    // store,
-    components: { App },
-});
+    render: h => h(App)
+}).$mount("#app");
