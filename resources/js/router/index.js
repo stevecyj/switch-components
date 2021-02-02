@@ -15,6 +15,7 @@ const routes = [
     },
     {
         path: "/dashboard",
+        redirect: "/dashboard/card",
         component: config.Dashboard,
         name: "dashboard",
         children: [
