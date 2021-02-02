@@ -1,8 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/manifest.js": "/js/manifest.js",
-    "/js/chunk/Component1.js?_v=[chunkHash]": "/js/chunk/Component1.js?_v=[chunkHash]",
-    "/js/chunk/Component2.js?_v=[chunkHash]": "/js/chunk/Component2.js?_v=[chunkHash]",
+    "/js/chunk/Component1.js?v=[chunkHash]": "/js/chunk/Component1.js?v=[chunkHash]",
+    "/js/chunk/Component2.js?v=[chunkHash]": "/js/chunk/Component2.js?v=[chunkHash]",
     "/css/app.css": "/css/app.css",
     "/js/vendor.js": "/js/vendor.js"
 }
