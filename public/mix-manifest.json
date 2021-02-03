@@ -1,15 +1,13 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/manifest.js": "/js/manifest.js",
-    "/js/chunk/Component1.js?v=41c925c3056a9c15316d": "/js/chunk/Component1.js?v=41c925c3056a9c15316d",
-    "/js/chunk/Component2.js?v=c95481f60edb7c96a99d": "/js/chunk/Component2.js?v=c95481f60edb7c96a99d",
+    "/js/chunk/Component1.js?v=b2080d77a04d66b3a3cf": "/js/chunk/Component1.js?v=b2080d77a04d66b3a3cf",
+    "/js/chunk/Component2.js?v=ba6c480f9c5bbeddc1aa": "/js/chunk/Component2.js?v=ba6c480f9c5bbeddc1aa",
     "/js/chunk/Dashboard.js?v=abd9a1ab521882258c58": "/js/chunk/Dashboard.js?v=abd9a1ab521882258c58",
     "/js/chunk/Events.js?v=7215d08f3b777966f121": "/js/chunk/Events.js?v=7215d08f3b777966f121",
     "/js/chunk/Card.js?v=2044703b72babd094b14": "/js/chunk/Card.js?v=2044703b72babd094b14",
     "/js/chunk/Chart.js?v=53a403ff3ee8850a2a3a": "/js/chunk/Chart.js?v=53a403ff3ee8850a2a3a",
     "/js/chunk/Table.js?v=4ab48df2170e4ef77307": "/js/chunk/Table.js?v=4ab48df2170e4ef77307",
     "/css/app.css": "/css/app.css",
-    "/js/vendor.js": "/js/vendor.js",
-    "/js/chunk/Component2.js?v=a411dd96d8d03ee4cfac": "/js/chunk/Component2.js?v=a411dd96d8d03ee4cfac",
-    "/js/chunk/Component2.js?v=ba6c480f9c5bbeddc1aa": "/js/chunk/Component2.js?v=ba6c480f9c5bbeddc1aa"
+    "/js/vendor.js": "/js/vendor.js"
 }
