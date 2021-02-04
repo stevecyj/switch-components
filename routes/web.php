@@ -22,13 +22,13 @@ Route::get('/', function () {
 // })->where('any', '.*');
 
 
-Route::get('/ex1', function () {
-    return view('ex1');
-});
+// Route::get('/ex1', function () {
+//     return view('ex1');
+// });
 
-Route::get('/{any?}', function () {
-    return view('welcome');
-})->where(
-    'any',
-    '^(?!api\/)[\/\w\.\,-]*'
-);
+// Route::get('/{any?}', function () {
+//     return view('welcome');
+// })->where(
+//     'any',
+//     '^(?!api\/)[\/\w\.\,-]*'
+// );

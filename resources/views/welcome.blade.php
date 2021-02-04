@@ -13,9 +13,7 @@
 </head>
 
 <body>
-    <div id="app">
-        <app></app>
-    </div>
+    <div id="app"></div>
 
     <script src="{{ asset('js/manifest.js') }}" defer></script>
     <script src="{{ asset('js/vendor.js') }}" defer></script>
