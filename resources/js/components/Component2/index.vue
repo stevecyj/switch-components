@@ -1,5 +1,5 @@
 <template>
-    <div>this is Component 2</div>
+    <div class="text-4xl bg-green-500">this is Component 2</div>
 </template>
 <script>
 export default {

@@ -1,7 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/manifest.js": "/js/manifest.js",
-    "/js/chunk/Component1.js?v=b2080d77a04d66b3a3cf": "/js/chunk/Component1.js?v=b2080d77a04d66b3a3cf",
+    "/js/chunk/Component1.js?v=2887fc7118044d545d42": "/js/chunk/Component1.js?v=2887fc7118044d545d42",
     "/js/chunk/Component2.js?v=f4213dcb2172b2f6725a": "/js/chunk/Component2.js?v=f4213dcb2172b2f6725a",
     "/js/chunk/Dashboard.js?v=abd9a1ab521882258c58": "/js/chunk/Dashboard.js?v=abd9a1ab521882258c58",
     "/js/chunk/Card.js?v=2044703b72babd094b14": "/js/chunk/Card.js?v=2044703b72babd094b14",
@@ -10,5 +10,21 @@
     "/js/chunk/Events.js?v=7215d08f3b777966f121": "/js/chunk/Events.js?v=7215d08f3b777966f121",
     "/js/chunk/Counter.js?v=76796de741572d2fe523": "/js/chunk/Counter.js?v=76796de741572d2fe523",
     "/css/app.css": "/css/app.css",
-    "/js/vendor.js": "/js/vendor.js"
+    "/js/vendor.js": "/js/vendor.js",
+    "/js/chunk/Component1.js?v=3c4c74ef4dcc47abaa09": "/js/chunk/Component1.js?v=3c4c74ef4dcc47abaa09",
+    "/js/chunk/Component1.js?v=4b1f97c6569dc60af410": "/js/chunk/Component1.js?v=4b1f97c6569dc60af410",
+    "/js/chunk/Component2.js?v=a6d176132d51d17bb216": "/js/chunk/Component2.js?v=a6d176132d51d17bb216",
+    "/js/chunk/Component2.js?v=cfadb1fc17ae708abfb9": "/js/chunk/Component2.js?v=cfadb1fc17ae708abfb9",
+    "/js/chunk/Dashboard.js?v=b56a5c6ed15105540874": "/js/chunk/Dashboard.js?v=b56a5c6ed15105540874",
+    "/js/chunk/Dashboard.js?v=16402472fc68151cffd7": "/js/chunk/Dashboard.js?v=16402472fc68151cffd7",
+    "/js/chunk/Events.js?v=3adbbdbe3217912d199c": "/js/chunk/Events.js?v=3adbbdbe3217912d199c",
+    "/js/chunk/Events.js?v=d40d19a933d8d3435361": "/js/chunk/Events.js?v=d40d19a933d8d3435361",
+    "/js/chunk/Counter.js?v=7cc9b25e6529e8c83b60": "/js/chunk/Counter.js?v=7cc9b25e6529e8c83b60",
+    "/js/chunk/Counter.js?v=05c9bbf84c51e8d1bad2": "/js/chunk/Counter.js?v=05c9bbf84c51e8d1bad2",
+    "/js/chunk/Card.js?v=d23212c1ed3b8279a674": "/js/chunk/Card.js?v=d23212c1ed3b8279a674",
+    "/js/chunk/Chart.js?v=1916c9b508caea32489a": "/js/chunk/Chart.js?v=1916c9b508caea32489a",
+    "/js/chunk/Table.js?v=57e785c53d45002270ed": "/js/chunk/Table.js?v=57e785c53d45002270ed",
+    "/js/chunk/Card.js?v=8e2d21d465552da7def0": "/js/chunk/Card.js?v=8e2d21d465552da7def0",
+    "/js/chunk/Chart.js?v=bcc5582699ff451e8e11": "/js/chunk/Chart.js?v=bcc5582699ff451e8e11",
+    "/js/chunk/Table.js?v=7797aacb1491d6c77925": "/js/chunk/Table.js?v=7797aacb1491d6c77925"
 }

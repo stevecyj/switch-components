@@ -1,5 +1,5 @@
 <template>
-    <div class="hello">
+    <div class="hello text-7xl bg-purple-500">
         <h1>{{ count }}</h1>
         <button @click="addCount">Add</button>
     </div>
@@ -7,20 +7,20 @@
 
 <script>
 // 工具函式
-import { mapState, mapMutations } from "vuex";
+import { mapState, mapMutations } from 'vuex';
 export default {
-    name: "counter",
+    name: 'counter',
     computed: {
         // count() {
         //   return this.$store.state.count;
         // },
-        ...mapState(["count"])
+        ...mapState(['count']),
     },
     methods: {
         // addCount() {
         //   this.$store.commit("addCount");
         // },
-        ...mapMutations(["addCount"])
-    }
+        ...mapMutations(['addCount']),
+    },
 };
 </script>

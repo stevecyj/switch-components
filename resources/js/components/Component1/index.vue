@@ -1,9 +1,9 @@
 <template>
-    <div>this is Component 1</div>
+    <div class="text-3xl bg-red-400">this is Component 1</div>
 </template>
 <script>
 export default {
-    name: "component1"
+    name: 'component1',
 };
 </script>
 <style scoped>
