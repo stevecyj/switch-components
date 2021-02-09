@@ -2,7 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/js/manifest.js": "/js/manifest.js",
     "/js/chunk/Component1.js?v=b2080d77a04d66b3a3cf": "/js/chunk/Component1.js?v=b2080d77a04d66b3a3cf",
-    "/js/chunk/Component2.js?v=cf71550829e72b58ddc3": "/js/chunk/Component2.js?v=cf71550829e72b58ddc3",
+    "/js/chunk/Component2.js?v=f4213dcb2172b2f6725a": "/js/chunk/Component2.js?v=f4213dcb2172b2f6725a",
     "/js/chunk/Dashboard.js?v=abd9a1ab521882258c58": "/js/chunk/Dashboard.js?v=abd9a1ab521882258c58",
     "/js/chunk/Card.js?v=2044703b72babd094b14": "/js/chunk/Card.js?v=2044703b72babd094b14",
     "/js/chunk/Chart.js?v=53a403ff3ee8850a2a3a": "/js/chunk/Chart.js?v=53a403ff3ee8850a2a3a",
@@ -10,6 +10,5 @@
     "/js/chunk/Events.js?v=7215d08f3b777966f121": "/js/chunk/Events.js?v=7215d08f3b777966f121",
     "/js/chunk/Counter.js?v=76796de741572d2fe523": "/js/chunk/Counter.js?v=76796de741572d2fe523",
     "/css/app.css": "/css/app.css",
-    "/js/vendor.js": "/js/vendor.js",
-    "/js/chunk/Component2.js?v=e35c91b15e16c267b973": "/js/chunk/Component2.js?v=e35c91b15e16c267b973"
+    "/js/vendor.js": "/js/vendor.js"
 }

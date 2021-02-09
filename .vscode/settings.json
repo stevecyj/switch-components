@@ -1,2 +1,203 @@
 {
+    "window.zoomLevel": 0,
+    "powermode.enabled": true,
+    "sync.gist": "a1404d75ea5160ecb063143d5db1638f",
+    "sync.quietSync": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.forceDownload": false,
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "window.openFilesInNewWindow": "on",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/style"
+        },
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/dist/style"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.ignoreFiles": [".vscode/**", ".data/**"],
+    "workbench.editor.enablePreview": false,
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#2f4c58"
+    },
+    "terminal.integrated.shell.windows": "cmd.exe",
+    "terminal.integrated.env.windows": {
+        "CMDER_ROOT": "C:\\cmder"
+    },
+    "terminal.integrated.shellArgs.windows": ["/k C:\\cmder\\vendor\\init.bat"],
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "editor.rulers": [
+        {
+            "column": 120,
+            "color": "#2f4c58"
+        }
+    ],
+    "html.format.wrapAttributes": "auto",
+    "editor.wordWrapColumn": 120,
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 18,
+    "editor.fontLigatures": true,
+    "editor.renderIndentGuides": true,
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.formatOnSave": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.snippetSuggestions": "top",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // "[json]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+    "emmet.syntaxProfiles": {
+        "javascript": "html"
+    },
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.defaultFormatter.html": "prettier",
+    "vetur.format.defaultFormatter.css": "prettier",
+    "vetur.format.defaultFormatter.postcss": "prettier",
+    "vetur.format.defaultFormatter.scss": "prettier",
+    "vetur.format.defaultFormatter.less": "prettier",
+    "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+    "vetur.format.defaultFormatter.js": "prettier",
+    "vetur.format.defaultFormatter.ts": "prettier",
+    "vetur.format.defaultFormatterOptions": {
+        //
+        "prettier": {
+            "printWidth": 120,
+            "semi": true,
+            "singleQuote": true,
+            "eslintIntegration": true,
+            "trailingComma": "es5"
+        }
+    },
+    "explorer.confirmDelete": true,
+    "eslint.validate": ["javascript", "javascriptreact", "vue"],
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "One Dark Pro",
+    "sync.forceUpload": true,
+    "workbench.tree.indent": 25,
+    "bookmarks.saveBookmarksInProject": true,
+    "git.suggestSmartCommit": false,
+    "liveServer.settings.ChromeDebuggingAttachment": true,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --remote-debugging-port=9222",
+    "workbench.startupEditor": "newUntitledFile",
+    "php.validate.run": "onType",
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/usr/bin/php",
+    "php.executablePath": "/usr/bin/php",
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer",
+        "editor.formatOnSave": true
+    },
+    "php.suggest.basic": false,
+    // php-cs-fixer
+    "php-cs-fixer.lastDownload": 1611886191160,
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.executablePathWindows": "C:\\Users\\steve_tsao.NEITHNET\\AppData\\Roaming\\Composer\\vendor\\bin\\php-cs-fixer.bat", //eg: php-cs-fixer.bat
+    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.rules": "@PSR2",
+    "php-cs-fixer.config": ".php_cs;.php_cs.dist",
+    "php-cs-fixer.allowRisky": false,
+    "php-cs-fixer.pathMode": "override",
+    "php-cs-fixer.exclude": [],
+    "php-cs-fixer.autoFixByBracket": false,
+    "php-cs-fixer.autoFixBySemicolon": true,
+    "php-cs-fixer.formatHtml": true,
+    "php-cs-fixer.documentFormattingProvider": true,
+    "intelephense.format.braces": "k&r",
+    "macros": {
+        "end_semicolon": [
+            // 末尾加分號
+            "cursorLineEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            }
+        ]
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "cSpell.userWords": [
+        "APIURL",
+        "DEVTOOLS",
+        "Formik",
+        "KHTML",
+        "Laravel",
+        "MVVM",
+        "Nrandom",
+        "Tokenstrait",
+        "Unmount",
+        "Vuex",
+        "apng",
+        "camelcase",
+        "closebutton",
+        "cobranding",
+        "crossorigin",
+        "hqdefault",
+        "lastrandom",
+        "promisify",
+        "readonly",
+        "tailwindcss",
+        "typicode",
+        "ytimg"
+    ],
+    "remote.SSH.showLoginTerminal": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "files.eol": "\n",
+    "tabnine.experimentalAutoImports": true,
+    "remote.SSH.remotePlatform": {
+        "3.112.128.60": "linux",
+        "10.249.33.229": "linux",
+        "172.17.204.4": "linux",
+        "172.17.204.5": "linux",
+        "nms6": "linux"
+    },
+    "editor.tabCompletion": "on",
+    "editor.formatOnSaveMode": "file",
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 120
+    // getter setter 註解間的空格數量
+    // "phpGettersSetters.spacesAfterParam": 1,
+    // "phpGettersSetters.spacesAfterParamVar": 1,
+    // "phpGettersSetters.spacesAfterReturn": 1
+    // "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
+    // "terminal.integrated.shellArgs.windows": ["-c", "zsh"]
 }

@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-    name: "component2",
+    name: 'component2',
     created() {
         // this.$http
         //     .get(`${process.env.MIX_DOG}`)
@@ -15,6 +15,6 @@ export default {
             // .get(`${process.env.MIX_PARK}`)
             .then(res => console.log(res.data))
             .catch(err => console.log(err));
-    }
+    },
 };
 </script>
