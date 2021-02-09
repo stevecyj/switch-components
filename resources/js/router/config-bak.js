@@ -28,5 +28,7 @@ export default {
     Events: () => import(/* webpackChunkName: 'Events' */ "../views/Events"),
     Card: () => import(/* webpackChunkName: 'Card' */ "../components/Card"),
     Chart: () => import(/* webpackChunkName: 'Chart' */ "../components/Chart"),
-    Table: () => import(/* webpackChunkName: 'Table' */ "../components/Table")
+    Table: () => import(/* webpackChunkName: 'Table' */ "../components/Table"),
+    Counter: () =>
+        import(/* webpackChunkName: 'Counter' */ "../components/Counter")
 };

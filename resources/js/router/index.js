@@ -1,5 +1,4 @@
 import VueRouter from "vue-router";
-import config from "./config";
 
 const routes = [
     { path: "/", redirect: "/component1" },
@@ -38,8 +37,15 @@ const routes = [
     },
     {
         path: "/events",
-        component: config.Events,
+        component: () =>
+            import(/* webpackChunkName: 'Events' */ "../views/Events"),
         name: "events"
+    },
+    {
+        path: "/counter",
+        component: () =>
+            import(/* webpackChunkName: 'Counter' */ "../components/Counter"),
+        name: "counter"
     }
 ];
 
