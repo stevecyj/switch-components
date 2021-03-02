@@ -45,6 +45,11 @@ const routes = [
         component: () => import(/* webpackChunkName: 'Counter' */ '../components/Counter'),
         name: 'counter',
     },
+    {
+        path: '/abouttailwind',
+        component: () => import(/* webpackChunkName: 'AboutTailwind' */ '../components/AboutTailwind'),
+        name: 'aboutTailwind',
+    },
 ];
 
 const router = new VueRouter({
