@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::match(['get', 'post'], 'fgp', function () {
+    return 'This is a request from get or post';
+});
+
+Route::get('/user/{id}', function ($id) {
+    return 'User '.$id;
+});

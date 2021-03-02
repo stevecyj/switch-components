@@ -17,6 +17,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('hello', function () {
+    return 'Hello Laravel!';
+});
+
+Route::post('haha', function () {
+    return 'haha!';
+});
+
+// Route::match(['get', 'post'], 'fgp', function () {
+//     return 'This is a request from get or post';
+// });
+
+
 // Route::get('/{any}', function () {
 //     return view('welcome');
 // })->where('any', '.*');
