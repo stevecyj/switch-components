@@ -2,7 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/js/manifest.js": "/js/manifest.js",
     "/js/chunk/Component1.js?v=4b1f97c6569dc60af410": "/js/chunk/Component1.js?v=4b1f97c6569dc60af410",
-    "/js/chunk/Component2.js?v=02c4327c7e87486025a3": "/js/chunk/Component2.js?v=02c4327c7e87486025a3",
+    "/js/chunk/Component2.js?v=cfadb1fc17ae708abfb9": "/js/chunk/Component2.js?v=cfadb1fc17ae708abfb9",
     "/js/chunk/Dashboard.js?v=16402472fc68151cffd7": "/js/chunk/Dashboard.js?v=16402472fc68151cffd7",
     "/js/chunk/Card.js?v=8e2d21d465552da7def0": "/js/chunk/Card.js?v=8e2d21d465552da7def0",
     "/js/chunk/Chart.js?v=bcc5582699ff451e8e11": "/js/chunk/Chart.js?v=bcc5582699ff451e8e11",
@@ -11,5 +11,5 @@
     "/js/chunk/Counter.js?v=05c9bbf84c51e8d1bad2": "/js/chunk/Counter.js?v=05c9bbf84c51e8d1bad2",
     "/css/app.css": "/css/app.css",
     "/js/vendor.js": "/js/vendor.js",
-    "/js/chunk/Component2.js?v=0825e837278dc474c7f9": "/js/chunk/Component2.js?v=0825e837278dc474c7f9"
+    "/js/chunk/AboutTailwind.js?v=888968568b7b7b4e8298": "/js/chunk/AboutTailwind.js?v=888968568b7b7b4e8298"
 }
