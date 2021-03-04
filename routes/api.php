@@ -99,3 +99,8 @@ Route::prefix('admin')->group(function () {
         return $url;
     })->name('slist');
 });
+
+// 📝路由模型綁定
+Route::get('users/{user}', function (\App\Models\User $user) {
+    return $user;
+});
