@@ -45,3 +45,7 @@ Route::post('haha', function () {
 //     'any',
 //     '^(?!api\/)[\/\w\.\,-]*'
 // );
+
+Route::fallback(function () {
+    return "你來到了錯誤頁！";
+});
