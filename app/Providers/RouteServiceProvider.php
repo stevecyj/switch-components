@@ -7,6 +7,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -38,6 +39,9 @@ class RouteServiceProvider extends ServiceProvider
         // 📝全域路由限制
         // Route::pattern('id', '[0-9]+');
         $this->configureRateLimiting();
+
+        // 📝路由模型顯式綁定
+        // Route::model('user', User::class);
 
         $this->routes(function () {
             Route::prefix('api')

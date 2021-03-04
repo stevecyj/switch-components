@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Models\User;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -100,7 +102,12 @@ Route::prefix('admin')->group(function () {
     })->name('slist');
 });
 
-// 📝路由模型綁定
+// 📝路由模型綁定(隱式)
 Route::get('users/{user}', function (\App\Models\User $user) {
+    return $user;
+});
+
+// 📝路由模型綁定(顯式)
+Route::get('profile/{user}', function (User $user) {
     return $user;
 });
