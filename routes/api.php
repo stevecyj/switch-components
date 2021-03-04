@@ -87,3 +87,15 @@ Route::get('teamcrew/{id}/profile/{hp}', function ($id, $hp) {
     $url = route('profile', ['id' => $id,'hp' =>$hp]);
     return $url;
 })->name('profile');
+
+// 📝路由分組、前綴
+Route::prefix('admin')->group(function () {
+    Route::get('users', function () {
+        $url = route('sadmin');
+        return $url;
+    })->name('sadmin');
+    Route::get('list', function () {
+        $url = route('slist');
+        return $url;
+    })->name('slist');
+});
