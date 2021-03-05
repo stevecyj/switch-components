@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('hello', function () {
     return 'Hello Laravel!';
-});
+})->middleware('age');
 
 Route::post('haha', function () {
     return 'haha!';
@@ -45,6 +46,8 @@ Route::post('haha', function () {
 //     'any',
 //     '^(?!api\/)[\/\w\.\,-]*'
 // );
+
+// Route::get('cuser/{user}', [UserController::class, 'show']);
 
 Route::fallback(function () {
     return "你來到了錯誤頁！";

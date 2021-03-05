@@ -2,6 +2,10 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ItemController;
+use App\Http\Controllers\UserController;
+
+
 
 use App\Models\User;
 
@@ -102,12 +106,23 @@ Route::prefix('admin')->group(function () {
     })->name('slist');
 });
 
+Route::group([
+    'middleware' =>['checkValidIp'],
+    'prefix' => 'cart'
+], function () {
+    Route::post('/store', [ItemController::class, 'store']);
+    Route::put('/{id}', [ItemController::class, 'update'])->withoutMiddleware(checkValidIp::class);
+});
+
 // 📝路由模型綁定(隱式)
 Route::get('users/{user}', function (\App\Models\User $user) {
     return $user;
 });
 
 // 📝路由模型綁定(顯式)
-Route::get('profile/{user}', function (User $user) {
+Route::get('prof/{user}', function (User $user) {
     return $user;
 });
+
+// 📝 to UserController
+Route::get('cuser/{user}', [UserController::class, 'show']);

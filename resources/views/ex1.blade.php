@@ -13,6 +13,7 @@
 
 <body>
     this is Ex1 Blade
+    {{ $user }}
 
 </body>
 
