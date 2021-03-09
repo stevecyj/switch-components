@@ -21,6 +21,8 @@ Route::get('/', function () {
 Route::get('hello', function () {
     return 'Hello Laravel!';
 })->middleware('age');
+// ->middleware('age')
+// ->middleware('role:editor,Vision')
 
 Route::post('haha', function () {
     return 'haha!';
