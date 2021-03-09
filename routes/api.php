@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
 
 
 
@@ -126,3 +127,11 @@ Route::get('prof/{user}', function (User $user) {
 
 // 📝 to UserController
 Route::get('cuser/{user}', [UserController::class, 'show']);
+
+Route::resource('posts', PostController::class);
+
+// Request
+Route::get("chkrequest/{user}", [UserController::class, 'chkrequest']);
+
+// Response
+Route::get("chkresponse", [UserController::class,'chkresponse']);
