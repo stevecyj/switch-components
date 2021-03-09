@@ -85,7 +85,7 @@
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/chunk/" + chunkId + ".js?v=" + {"Component1":"4b1f97c6569dc60af410","Component2":"cfadb1fc17ae708abfb9","Dashboard":"16402472fc68151cffd7","Card":"8e2d21d465552da7def0","Chart":"bcc5582699ff451e8e11","Table":"7797aacb1491d6c77925","Events":"d40d19a933d8d3435361","Counter":"05c9bbf84c51e8d1bad2","AboutTailwind":"888968568b7b7b4e8298"}[chunkId] + "";
+/******/ 			return "js/chunk/" + chunkId + ".js?v=" + {"Component1":"2f4fe812b926c1ac0118","Component2":"f5e7740d1e9638c4b4aa","Dashboard":"570434dbe95c883cbddc","Card":"b036b2d0644d992bef26","Chart":"b0429a2852f0b8d6839c","Table":"e7b7127eb30d8a78d270","Events":"ffa00aeac13d73cffe31","Counter":"57502eddee5838490984","AboutTailwind":"b79628deac2b6af7b8d9"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -183,7 +183,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/~steve_tsao/switch-components/public/";
+/******/ 		__webpack_require__.p = "/switch-components/public/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

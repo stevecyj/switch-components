@@ -1,15 +1,15 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/manifest.js": "/js/manifest.js",
-    "/js/chunk/Component1.js?v=4b1f97c6569dc60af410": "/js/chunk/Component1.js?v=4b1f97c6569dc60af410",
-    "/js/chunk/Component2.js?v=cfadb1fc17ae708abfb9": "/js/chunk/Component2.js?v=cfadb1fc17ae708abfb9",
-    "/js/chunk/Dashboard.js?v=16402472fc68151cffd7": "/js/chunk/Dashboard.js?v=16402472fc68151cffd7",
-    "/js/chunk/Card.js?v=8e2d21d465552da7def0": "/js/chunk/Card.js?v=8e2d21d465552da7def0",
-    "/js/chunk/Chart.js?v=bcc5582699ff451e8e11": "/js/chunk/Chart.js?v=bcc5582699ff451e8e11",
-    "/js/chunk/Table.js?v=7797aacb1491d6c77925": "/js/chunk/Table.js?v=7797aacb1491d6c77925",
-    "/js/chunk/Events.js?v=d40d19a933d8d3435361": "/js/chunk/Events.js?v=d40d19a933d8d3435361",
-    "/js/chunk/Counter.js?v=05c9bbf84c51e8d1bad2": "/js/chunk/Counter.js?v=05c9bbf84c51e8d1bad2",
+    "/js/chunk/Component1.js?v=2f4fe812b926c1ac0118": "/js/chunk/Component1.js?v=2f4fe812b926c1ac0118",
+    "/js/chunk/Component2.js?v=f5e7740d1e9638c4b4aa": "/js/chunk/Component2.js?v=f5e7740d1e9638c4b4aa",
+    "/js/chunk/Dashboard.js?v=570434dbe95c883cbddc": "/js/chunk/Dashboard.js?v=570434dbe95c883cbddc",
+    "/js/chunk/Card.js?v=b036b2d0644d992bef26": "/js/chunk/Card.js?v=b036b2d0644d992bef26",
+    "/js/chunk/Chart.js?v=b0429a2852f0b8d6839c": "/js/chunk/Chart.js?v=b0429a2852f0b8d6839c",
+    "/js/chunk/Table.js?v=e7b7127eb30d8a78d270": "/js/chunk/Table.js?v=e7b7127eb30d8a78d270",
+    "/js/chunk/Events.js?v=ffa00aeac13d73cffe31": "/js/chunk/Events.js?v=ffa00aeac13d73cffe31",
+    "/js/chunk/Counter.js?v=57502eddee5838490984": "/js/chunk/Counter.js?v=57502eddee5838490984",
+    "/js/chunk/AboutTailwind.js?v=b79628deac2b6af7b8d9": "/js/chunk/AboutTailwind.js?v=b79628deac2b6af7b8d9",
     "/css/app.css": "/css/app.css",
-    "/js/vendor.js": "/js/vendor.js",
-    "/js/chunk/AboutTailwind.js?v=888968568b7b7b4e8298": "/js/chunk/AboutTailwind.js?v=888968568b7b7b4e8298"
+    "/js/vendor.js": "/js/vendor.js"
 }

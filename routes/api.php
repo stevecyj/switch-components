@@ -130,8 +130,11 @@ Route::get('cuser/{user}', [UserController::class, 'show']);
 
 Route::resource('posts', PostController::class);
 
-// Request
+// 📝 Request
 Route::get("chkrequest/{user}", [UserController::class, 'chkrequest']);
 
-// Response
+// 📝 Response
 Route::get("chkresponse", [UserController::class,'chkresponse']);
+
+// 📝 get picksee
+Route::get('getshorturl/{id}/shared-url', [UserController::class,'sharedUrl']);

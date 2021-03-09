@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use GuzzleHttp\Client;
+use App\Http\Services\ShortUrlService;
 
 class UserController extends Controller
 {
@@ -26,5 +28,13 @@ class UserController extends Controller
         // dump($request->input('aa'));
         return response()->view('welcome');
         // return response()->json($input);
+    }
+
+    // 縮網址
+    public function sharedUrl($id)
+    {
+        $service = new ShortUrlService();
+        $url = $service->makeShortUrl("http://localhost:3000/$id");
+        return response(['url' =>$url]);
     }
 }
