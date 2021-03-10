@@ -138,3 +138,6 @@ Route::get("chkresponse", [UserController::class,'chkresponse']);
 
 // 📝 get picksee 縮網址，外部的 api
 Route::get('getshorturl/{id}/shared-url', [UserController::class,'sharedUrl']);
+
+// 📝 get ubike open data
+Route::get('ubike-open-data', [UserController::class,'openDataUbike']);

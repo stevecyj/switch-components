@@ -2,8 +2,9 @@
     <div class="hello text-7xl bg-purple-500">
         <h1>{{ count }}</h1>
         <button @click="addCount">Add</button> <br />
-        <button @click="getData">click</button> <br />
+        <button @click="getData">UbikeOpenData(direct)</button> <br />
         <button @click="getShortUrl">short Url</button> <br />
+        <button @click="getUbikeOpenData">UbikeOpenData</button> <br />
     </div>
 </template>
 
@@ -36,6 +37,17 @@ export default {
         },
         getShortUrl() {
             let url = '/~steve_tsao/switch-components/public/api/getshorturl/aa/shared-url';
+            axios
+                .get(url)
+                .then(res => {
+                    console.log(res.data);
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        },
+        getUbikeOpenData() {
+            let url = '/~steve_tsao/switch-components/public/api/ubike-open-data';
             axios
                 .get(url)
                 .then(res => {

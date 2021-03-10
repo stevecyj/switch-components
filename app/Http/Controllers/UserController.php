@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use GuzzleHttp\Client;
 use App\Http\Services\ShortUrlService;
+use App\Http\Services\OpenDataUbikeService;
 
 class UserController extends Controller
 {
@@ -36,5 +36,13 @@ class UserController extends Controller
         $service = new ShortUrlService();
         $url = $service->makeShortUrl("http://localhost:3000/$id");
         return response(['url' =>$url]);
+    }
+
+    // open data
+    public function openDataUbike()
+    {
+        $service = new OpenDataUbikeService();
+        $ubkie_data = $service->getUbikeData();
+        return response(['ubikeData' =>$ubkie_data]);
     }
 }
