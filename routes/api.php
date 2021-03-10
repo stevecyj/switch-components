@@ -136,5 +136,5 @@ Route::get("chkrequest/{user}", [UserController::class, 'chkrequest']);
 // 📝 Response
 Route::get("chkresponse", [UserController::class,'chkresponse']);
 
-// 📝 get picksee
+// 📝 get picksee 縮網址，外部的 api
 Route::get('getshorturl/{id}/shared-url', [UserController::class,'sharedUrl']);

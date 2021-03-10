@@ -1,4 +1,4 @@
-const mix = require("laravel-mix");
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,8 +11,8 @@ const mix = require("laravel-mix");
  |
  */
 
-mix.js("resources/js/app.js", "public/js")
-    .postCss("resources/css/app.css", "public/css", [
+mix.js('resources/js/app.js', 'public/js')
+    .postCss('resources/css/app.css', 'public/css', [
         //
     ])
     // .version()
@@ -21,9 +21,9 @@ mix.js("resources/js/app.js", "public/js")
     .webpackConfig({
         output: {
             // publicPath: "/laravel-vue-minimal/public/", // 不加會噴錯
-            // publicPath: "/~steve_tsao/switch-components/public/",
-            publicPath: "/switch-components/public/",
-            chunkFilename: "js/chunk/[name].js?v=[contenthash]" // 分割文件存放位置
-        }
+            publicPath: '/~steve_tsao/switch-components/public/',
+            // publicPath: "/switch-components/public/",
+            chunkFilename: 'js/chunk/[name].js?v=[contenthash]', // 分割文件存放位置
+        },
     })
     .sourceMaps();

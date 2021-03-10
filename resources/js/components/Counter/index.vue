@@ -24,8 +24,9 @@ export default {
         // },
         ...mapMutations(['addCount']),
         getData() {
+            let url = 'https://datacenter.taichung.gov.tw/swagger/OpenData/9af00e84-473a-4f3d-99be-b875d8e86256';
             axios
-                .get('https://datacenter.taichung.gov.tw/swagger/OpenData/9af00e84-473a-4f3d-99be-b875d8e86256')
+                .get(url)
                 .then(res => {
                     console.log(res.data);
                 })
@@ -33,7 +34,17 @@ export default {
                     console.log(err);
                 });
         },
-        getShortUrl() {},
+        getShortUrl() {
+            let url = '/~steve_tsao/switch-components/public/api/getshorturl/aa/shared-url';
+            axios
+                .get(url)
+                .then(res => {
+                    console.log(res.data);
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        },
     },
 };
 </script>
