@@ -51,6 +51,8 @@ Route::post('haha', function () {
 
 // Route::get('cuser/{user}', [UserController::class, 'show']);
 
+// 不在定義之內的路由都會來這條
+// The fallback route should always be the last route registered by your application.
 Route::fallback(function () {
     return "你來到了錯誤頁！";
 });
