@@ -56,6 +56,27 @@ class RouteServiceProvider extends ServiceProvider
     }
 
     /**
+     * Define the routes for the application.
+     *
+     * @return void
+     */
+
+    public function map()
+    {
+        $this->mapApiRoutes();
+
+
+        $this->mapWebRoutes();
+
+
+        $this->mapAdminRoutes();
+
+
+        $this->mapManagerRoutes();
+    }
+
+
+    /**
      * Configure the rate limiters for the application.
      * 📝請求頻率限制
      * @return void
