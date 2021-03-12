@@ -16,8 +16,13 @@ class CheckRole
      */
     public function handle(Request $request, Closure $next, $role, $name)
     {
-        echo '我是 ' . $role . ', ' . '<br />';
-        echo '我的名字是 ' . $name  . '<br />';
+        // echo '我是 ' . $role . ', ' . '<br />';
+        // echo '我的名字是 ' . $name  . '<br />';
+        // return $next($request);
+
+        if (!($role =='緋紅女巫')) {
+            return redirect("/");
+        }
         return $next($request);
     }
 }

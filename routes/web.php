@@ -20,9 +20,9 @@ Route::get('/', function () {
 
 Route::get('hello', function () {
     return 'Hello Laravel!';
-})->middleware('age');
+})->middleware('role:緋紅女巫,汪達');
 // ->middleware('age')
-// ->middleware('role:editor,Vision')
+// ->middleware('role:緋紅女巫,汪達')
 
 Route::post('haha', function () {
     return 'haha!';
