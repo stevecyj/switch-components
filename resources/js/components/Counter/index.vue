@@ -1,7 +1,7 @@
 <template>
     <div class="hello text-7xl bg-purple-500">
         <h1>{{ count }}</h1>
-        <button @click="addCount">Add</button> <br />
+        <button @click="addCount" class="gentium">Add</button> <br />
         <button @click="getData">UbikeOpenData(direct)</button> <br />
         <button @click="getShortUrl">short Url</button> <br />
         <button @click="getUbikeOpenData">UbikeOpenData</button> <br />
@@ -72,3 +72,10 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+@import '../../../css/font.css';
+.gentium {
+    font-family: 'PAC-FONT';
+}
+</style>
