@@ -60,7 +60,6 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
-
     public function map()
     {
         $this->mapApiRoutes();
@@ -69,10 +68,47 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
 
-        $this->mapAdminRoutes();
+        $this->mapResellerRoutes();
+    }
 
+    /**
+     * Define the "web" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapWebRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/web.php'));
+    }
 
-        $this->mapManagerRoutes();
+    /**
+     * Define the "api" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapApiRoutes()
+    {
+        Route::prefix('api')
+            ->middleware('api')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/api.php'));
+    }
+
+    /**
+     * Custom routes for Reseller
+     */
+    protected function mapResellerRoutes()
+    {
+        Route::prefix('reseller')
+            ->middleware('api')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/reseller.php'));
     }
 
 

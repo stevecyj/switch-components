@@ -42,12 +42,12 @@ Route::post('haha', function () {
 //     return view('ex1');
 // });
 
-// Route::get('/{any?}', function () {
-//     return view('welcome');
-// })->where(
-//     'any',
-//     '^(?!api\/)[\/\w\.\,-]*'
-// );
+Route::get('/{any?}', function () {
+    return view('welcome');
+})->where(
+    'any',
+    '^(?!api\/)[\/\w\.\,-]*'
+);
 
 // Route::get('cuser/{user}', [UserController::class, 'show']);
 

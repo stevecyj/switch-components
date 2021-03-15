@@ -50,6 +50,17 @@ const routes = [
         component: () => import(/* webpackChunkName: 'AboutTailwind' */ '../components/AboutTailwind'),
         name: 'aboutTailwind',
     },
+    {
+        path: '/404',
+        component: () => import(/* webpackChunkName: 'Error' */ '../components/Error404'),
+        name: 'error404',
+    },
+    {
+        path: '*',
+        // redirect: '/404',
+        component: () => import(/* webpackChunkName: 'Error' */ '../components/Error404'),
+        name: 'error',
+    },
 ];
 
 const router = new VueRouter({
