@@ -19,6 +19,7 @@ use App\Models\User;
 |
 */
 
-Route::get('/', function () {
-    dd('welcome to reseller routes');
+Route::get('test', function () {
+    // dd('welcome to reseller routes');
+    return response('welcome to reseller routes');
 });

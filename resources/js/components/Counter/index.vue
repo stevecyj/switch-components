@@ -5,6 +5,7 @@
         <button @click="getData">UbikeOpenData(direct)</button> <br />
         <button @click="getShortUrl">short Url</button> <br />
         <button @click="getUbikeOpenData">UbikeOpenData</button> <br />
+        <button @click="TestResellerRoute">TestResellerRoute</button> <br />
     </div>
 </template>
 
@@ -48,6 +49,17 @@ export default {
         },
         getUbikeOpenData() {
             let url = '/~steve_tsao/switch-components/public/api/ubike-open-data';
+            axios
+                .get(url)
+                .then(res => {
+                    console.log(res.data);
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        },
+        TestResellerRoute() {
+            let url = '/~steve_tsao/switch-components/public/reseller/test';
             axios
                 .get(url)
                 .then(res => {
