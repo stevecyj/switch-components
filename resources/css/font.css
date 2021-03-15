@@ -1,4 +1,4 @@
 @font-face {
-    font-family: Gentium;
-    src: url('../fonts/PAC-FONT.TTF') format('truetype');
+    font-family: 'canterbury';
+    src: url('/switch-components/public/fonts/Canterbury.ttf') format('truetype');
 }

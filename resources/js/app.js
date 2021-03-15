@@ -7,6 +7,9 @@ import VueAxios from 'vue-axios';
 
 import router from './router/index';
 import store from './store';
+
+import '../css/font.css';
+
 import App from './views/app.vue';
 
 Vue.use(VueRouter);
