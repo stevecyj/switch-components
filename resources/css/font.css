@@ -1,4 +1,5 @@
 @font-face {
     font-family: 'canterbury';
-    src: url('/switch-components/public/fonts/Canterbury.ttf') format('truetype');
+    /* src: url('/switch-components/public/fonts/Canterbury.ttf') format('truetype'); */
+    src: url('/~steve_tsao/switch-components/public/fonts/Canterbury.ttf') format('truetype');
 }
