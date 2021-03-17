@@ -25,7 +25,7 @@ class CreateResellersTable extends Migration
             $table->string('community', 30);
             $table->string('email')->nullable();
             $table->string('note', 255);
-            $table->timestamps();
+            $table->timestamps($precision = 0);
         });
     }
 

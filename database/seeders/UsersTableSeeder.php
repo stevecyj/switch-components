@@ -19,13 +19,15 @@ class UsersTableSeeder extends Seeder
     {
         $faker = $this->withFaker();
         // 插入一条记录到 users 表，通过 Faker 模拟字段值
-        DB::table('users')->insert([
-            'name' => $faker->name,
-            'email' => $faker->unique()->safeEmail,
-            'email_verified_at' => now(),
-            'password' => bcrypt('secret'),
-            'remember_token' => Str::random(10)
-        ]);
+        for ($i = 1; $i <= 10; $i++) {
+            DB::table('users')->insert([
+                'name' => $faker->name,
+                'email' => $faker->unique()->safeEmail,
+                'email_verified_at' => now(),
+                'password' => bcrypt('secret'),
+                'remember_token' => Str::random(10)
+            ]);
+        }
     }
 
     /**
