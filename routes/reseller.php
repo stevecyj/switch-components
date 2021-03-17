@@ -2,9 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ItemController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\ResellerController;
 
 use App\Models\User;
 
@@ -23,3 +21,5 @@ Route::get('test', function () {
     // dd('welcome to reseller routes');
     return response('welcome to reseller routes');
 });
+
+Route::get('cert', [ResellerController::class,'show']);
