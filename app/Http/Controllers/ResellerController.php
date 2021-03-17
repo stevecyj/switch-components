@@ -10,6 +10,7 @@ class ResellerController extends Controller
     public function show(Request $request)
     {
         $cert = DB::connection('mysql_test')->table('cert')->get();
-        return response()->json($cert);
+        // return response()->json($cert);
+        return $cert;
     }
 }
