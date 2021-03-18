@@ -1,3 +1,3 @@
 <template>
-    <div>hahaha</div>
+    <div class="text-superxl">hahaha</div>
 </template>

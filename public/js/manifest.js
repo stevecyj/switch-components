@@ -85,7 +85,7 @@
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/chunk/" + chunkId + ".js?v=" + {"Component1":"4b1f97c6569dc60af410","Component2":"cfadb1fc17ae708abfb9","Dashboard":"16402472fc68151cffd7","Card":"8e2d21d465552da7def0","Chart":"bcc5582699ff451e8e11","Table":"7797aacb1491d6c77925","Events":"d40d19a933d8d3435361","Counter":"aa74e1423cdcfea4c865","AboutTailwind":"888968568b7b7b4e8298","Error":"9da5ec4c7557518a6052"}[chunkId] + "";
+/******/ 			return "js/chunk/" + chunkId + ".js?v=" + {"Component1":"4b1f97c6569dc60af410","Component2":"cfadb1fc17ae708abfb9","Dashboard":"16402472fc68151cffd7","Card":"8e2d21d465552da7def0","Chart":"bcc5582699ff451e8e11","Table":"7797aacb1491d6c77925","Events":"d40d19a933d8d3435361","Counter":"aa74e1423cdcfea4c865","AboutTailwind":"2516133179ab82e723f8","Error":"9da5ec4c7557518a6052"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
