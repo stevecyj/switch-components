@@ -4,6 +4,10 @@ module.exports = {
     theme: {
         extend: {
             fontSize: { superxl: ['10rem', { lineHeight: '10rem' }] },
+            fontFamily: {
+                zmxfont: ['Zhi Mang Xing'],
+                canterbury: ['canterbury'],
+            },
             colors: {
                 bootstrap_primary: '#1266F1',
                 bootstrap_secondary: '#B23CFD',
