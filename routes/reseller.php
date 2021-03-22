@@ -22,4 +22,5 @@ Route::get('test', function () {
     return response('welcome to reseller routes');
 });
 
-Route::get('cert/{hostname}', [ResellerController::class,'show']);
+// Route::get('cert/{hostname}', [ResellerController::class,'show']);
+Route::get('cert', [ResellerController::class,'show']);
