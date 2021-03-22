@@ -1,21 +1,20 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
+<ifmodule mod_rewrite.c>
 
-  RewriteCond %{REQUEST_URI} !^/host.html
-  RewriteCond %{SERVER_PORT} 16880
-  RewriteRule ^(.*)$ https://asmonitor.vir999.com:16881/$1 [R,L]
+    <ifmodule mod_negotiation.c>
+        Options -MultiViews
+    </ifmodule>
 
-  RewriteCond %{REQUEST_URI} !^/host.html
-  RewriteCond %{REQUEST_FILENAME} -d [OR]
-  RewriteCond %{REQUEST_FILENAME} -f
-  RewriteRule ^ ^$1 [N]
+    RewriteEngine On
 
-  RewriteCond %{REQUEST_URI} !^/host.html
-  RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
-  RewriteRule ^(.*)$ public/$1
+    RewriteCond %{REQUEST_FILENAME} -d [OR]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ ^$1 [N]
 
-  RewriteCond %{REQUEST_URI} !^/host.html
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^ server.php
-</IfModule>
+    RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
+    RewriteRule ^(.*)$ public/$1
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ server.php
+
+</ifmodule>
