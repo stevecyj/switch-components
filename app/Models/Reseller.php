@@ -13,5 +13,5 @@ class Reseller extends Model
     // protected $fillable = [
     //     '*',
     // ];
-    protected $guarded =['hostname'];
+    protected $guarded =[];
 }

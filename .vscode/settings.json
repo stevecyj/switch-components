@@ -197,7 +197,12 @@
     "editor.formatOnSaveMode": "file",
     "prettier.singleQuote": true,
     "prettier.printWidth": 120,
-    "remote.autoForwardPortsSource": "output"
+    "remote.autoForwardPortsSource": "output",
+    "favorites.resources": [
+      "routes/reseller.php",
+      "app/Http/Controllers/ResellerController.php",
+      "app/Models/Reseller.php"
+    ]
     // getter setter 註解間的空格數量
     // "phpGettersSetters.spacesAfterParam": 1,
     // "phpGettersSetters.spacesAfterParamVar": 1,

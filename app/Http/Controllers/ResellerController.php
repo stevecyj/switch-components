@@ -155,10 +155,25 @@ class ResellerController extends Controller
         // return $cert;
     }
 
+    // 📑關閉黑名單，新增
     public function showmass(Request $request)
     {
+        // 📝writing 1
+        // $data = $request->all();
+        // return Reseller::create($data);
+
+        // 📝writing 2
+        $reseller = new Reseller($request->all());
+        $reseller->save();
+    }
+
+    // 📑關閉黑名單，修改
+    public function certUpdate(Request $request)
+    {
         $data = $request->all();
-        return Reseller::create($data);
+        $reseller = Reseller::findOrFail(11);
+        $reseller->fill($data);
+        $reseller->save();
     }
 
     /**

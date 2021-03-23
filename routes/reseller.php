@@ -25,3 +25,4 @@ Route::get('test', function () {
 // Route::get('cert/{hostname}', [ResellerController::class,'show']);
 Route::get('cert', [ResellerController::class,'show']);
 Route::post('certmass', [ResellerController::class,'showmass']);
+Route::post('cert/update', [ResellerController::class,'certUpdate']);
