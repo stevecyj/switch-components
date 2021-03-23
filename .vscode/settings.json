@@ -201,7 +201,8 @@
     "favorites.resources": [
       "routes/reseller.php",
       "app/Http/Controllers/ResellerController.php",
-      "app/Models/Reseller.php"
+      "app/Models/Reseller.php",
+      "routes/api.php"
     ]
     // getter setter 註解間的空格數量
     // "phpGettersSetters.spacesAfterParam": 1,

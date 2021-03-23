@@ -175,8 +175,8 @@ class ResellerController extends Controller
         // $reseller = Reseller::onlyTrashed()->where('confirmed', 1)->restore();
 
         // 📝物理刪除
-        $reseller = Reseller::findOrFail(53);
-        $reseller->forceDelete();
+        // $reseller = Reseller::findOrFail(53);
+        // $reseller->forceDelete();
 
 
         // dd($cert);

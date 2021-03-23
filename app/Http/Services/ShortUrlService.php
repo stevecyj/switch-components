@@ -6,13 +6,15 @@ use GuzzleHttp\Client;
 class ShortUrlService
 {
     protected $client;
+    // 建構子
     public function __construct()
     {
         $this->client = new Client();
     }
     public function makeShortUrl($url)
     {
-        $accesstoken = env('SHORTURL_ACCESS_TOKEN');
+        // $accesstoken = env('SHORTURL_ACCESS_TOKEN');
+        $accesstoken = "20f07f91f3303b2f66ab6f61698d977d69b83d64";
         $data = [
         'url' => $url
         ];
