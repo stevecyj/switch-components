@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Reseller;
 
 class ResellerController extends Controller
 {
@@ -67,7 +68,50 @@ class ResellerController extends Controller
         // $cert_01 = DB::connection('mysql_test')->table('cert')->whereMonth('created_at', '1');
         // $cert_03_union = DB::connection('mysql_test')->table('cert')->whereMonth('created_at', '3')->union($cert_01)->get();
 
-        dd($cert_03_union);
+        // 📝排序
+        // $cert = DB::connection('mysql_test')->table('cert')->orderByDesc('created_at')->get();
+
+        // 📝分組
+        // $cert = DB::connection('mysql_test')->table('cert')->selectRaw('created_at,visitor')->get()->groupBy('created_at');
+
+        /*
+        |--------------------------------------------------------------------------
+        | Eloquent Start
+        |--------------------------------------------------------------------------
+        |
+        */
+
+        // $cert = Reseller::all();
+
+        // foreach(Reseller::all() as $reseller){
+        //     dump( $reseller->visitor . ':' . $reseller->main_group);
+        // }
+
+        // 📝chunk
+        // Reseller::chunk(3, function($resellers){
+        //     foreach ($resellers as $reseller) {
+        //         if($reseller->confirmed == 0){
+        //             continue;
+        //         }else{
+        //             dump($reseller->hostname . ':' . $reseller->confirmed);
+        //         }
+        //     }
+        // });
+
+        // 📝cursor, 資料量大時
+        // $cert = Reseller::all()->filter(function($reseller){
+        //     return $reseller->confirmed == 0;
+        // });
+
+        // $cert = Reseller::cursor()->filter(function($reseller){
+        //     return $reseller->confirmed == 0;
+        // });
+
+        // 📝指定欄位
+        // $cert = Reseller::where('confirmed', '=' , 1 )->select('confirmed','visitor','hostname')->get();
+
+        // dd($cert);
+        // return response($cert);
         // return response()->json($cert);
         // return $cert;
     }
