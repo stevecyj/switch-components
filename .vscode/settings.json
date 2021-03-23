@@ -89,7 +89,7 @@
         "javascript": "html"
     },
     "vetur.format.options.tabSize": 4,
-    "vetur.format.defaultFormatter.html": "prettier",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
     "vetur.format.defaultFormatter.css": "prettier",
     "vetur.format.defaultFormatter.postcss": "prettier",
     "vetur.format.defaultFormatter.scss": "prettier",
@@ -105,6 +105,9 @@
             "singleQuote": true,
             "eslintIntegration": true,
             "trailingComma": "es5"
+        },
+        "js-beautify-html": {
+            "wrap_attributes": "aligned-multiple"
         }
     },
     "explorer.confirmDelete": true,
@@ -128,7 +131,7 @@
     },
     "php.suggest.basic": false,
     // php-cs-fixer
-    "php-cs-fixer.lastDownload": 1611886191160,
+    "php-cs-fixer.lastDownload": 1616028472823,
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
     "php-cs-fixer.executablePathWindows": "C:\\Users\\steve_tsao.NEITHNET\\AppData\\Roaming\\Composer\\vendor\\bin\\php-cs-fixer.bat", //eg: php-cs-fixer.bat
     "php-cs-fixer.onsave": true,
@@ -193,7 +196,8 @@
     "editor.tabCompletion": "on",
     "editor.formatOnSaveMode": "file",
     "prettier.singleQuote": true,
-    "prettier.printWidth": 120
+    "prettier.printWidth": 120,
+    "remote.autoForwardPortsSource": "output"
     // getter setter 註解間的空格數量
     // "phpGettersSetters.spacesAfterParam": 1,
     // "phpGettersSetters.spacesAfterParamVar": 1,

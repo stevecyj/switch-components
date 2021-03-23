@@ -155,6 +155,12 @@ class ResellerController extends Controller
         // return $cert;
     }
 
+    public function showmass(Request $request)
+    {
+        $data = $request->all();
+        return Reseller::create($data);
+    }
+
     /**
      * 獲取 Faker 實例
      *

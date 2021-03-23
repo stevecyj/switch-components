@@ -10,7 +10,8 @@ class Reseller extends Model
     use HasFactory;
     protected $connection = 'mysql_test';
     protected $table = 'cert';
-    protected $fillable = [
-        '*',
-    ];
+    // protected $fillable = [
+    //     '*',
+    // ];
+    protected $guarded =['hostname'];
 }
