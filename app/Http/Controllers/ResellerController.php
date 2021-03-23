@@ -147,7 +147,37 @@ class ResellerController extends Controller
         // $reseller->save();
 
         // 📝Eloquent 刪除
-        // Reseller::destroy(25,29,31);
+        // Reseller::destroy(25, 29, 31);
+
+        // 📝判斷是否被軟刪除
+        // $reseller = Reseller::findOrFail(45);
+        // $reseller->delete();
+        // if ($reseller->trashed()) {
+        //     dump('此記錄已刪除');
+        // }
+
+        // 📝查詢刪除記錄
+        // 🖍查得到
+        // $reseller = DB::connection('mysql_test')->table('cert')->where('id', '=', 45)->get();
+
+        // 🖍查不到
+        // $reseller = Reseller::find(45);
+
+        // 🖍查得到
+        // $reseller = Reseller::withTrashed()->find(45);
+        // dd($reseller);
+
+        // 📝只查被軟刪除的記錄
+        // $reseller = Reseller::onlyTrashed()->where('confirmed', 1)->get();
+        // dd($reseller);
+
+        // 📝恢復軟刪除記錄
+        // $reseller = Reseller::onlyTrashed()->where('confirmed', 1)->restore();
+
+        // 📝物理刪除
+        $reseller = Reseller::findOrFail(53);
+        $reseller->forceDelete();
+
 
         // dd($cert);
         // return response($cert);
@@ -155,7 +185,7 @@ class ResellerController extends Controller
         // return $cert;
     }
 
-    // 📑關閉黑名單，新增
+    // 📝關閉黑名單，新增
     public function showmass(Request $request)
     {
         // 📝writing 1
