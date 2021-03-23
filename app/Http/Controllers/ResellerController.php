@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Reseller;
+use Carbon\Carbon;
+
+use Faker\Generator;
+use Illuminate\Container\Container;
+use Illuminate\Support\Str;
 
 class ResellerController extends Controller
 {
@@ -110,9 +115,53 @@ class ResellerController extends Controller
         // 📝指定欄位
         // $cert = Reseller::where('confirmed', '=' , 1 )->select('confirmed','visitor','hostname')->get();
 
+        // 📝Eloquent 統計
+        // $num = Reseller::whereNotNull('hostname')->count();
+        // $sum = Reseller::whereNotNull('hostname')->sum('id');
+        // $avg = Reseller::whereNotNull('hostname')->avg('id');
+        // $min = Reseller::whereNotNull('hostname')->min('id');
+        // $max = Reseller::whereNotNull('hostname')->max('id');
+        // return response()->json(array('num' => $num, 'sum' => $sum, 'avg'=>$avg, 'min'=>$min, 'max'=>$max));
+
+        // 📝Eloquent 新增
+        // $faker = $this->withFaker();
+        // $reseller = new Reseller;
+        // $reseller->confirmed =$faker->boolean($chanceOfGettingTrue = 50);
+        // $reseller->visitor = $faker->ipv4;
+        // $reseller->hostname = $faker->word;
+        // $reseller->main_group = Str::random(10);
+        // $reseller->sub_group = Str::random(10);
+        // $reseller->monitor = $faker->boolean;
+        // $reseller->alert = $faker->boolean;
+        // $reseller->community = Str::random(30);
+        // $reseller->email = $faker->unique()->safeEmail;
+        // $reseller->note = $faker->text(200);
+        // $reseller->created_at =Carbon::now();
+        // $reseller->updated_at =Carbon::now();
+        // $reseller->save();
+
+        // 📝Eloquent 修改
+        // $faker = $this->withFaker();
+        // $reseller = Reseller::find(25);
+        // $reseller->note = $faker->text(50);
+        // $reseller->save();
+
+        // 📝Eloquent 刪除
+        // Reseller::destroy(25,29,31);
+
         // dd($cert);
         // return response($cert);
         // return response()->json($cert);
         // return $cert;
+    }
+
+    /**
+     * 獲取 Faker 實例
+     *
+     * @return Generator
+     */
+    protected function withFaker()
+    {
+        return Container::getInstance()->make(Generator::class);
     }
 }
