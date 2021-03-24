@@ -26,3 +26,6 @@ Route::get('test', function () {
 Route::get('cert', [ResellerController::class,'show']);
 Route::post('certmass', [ResellerController::class,'showmass']);
 Route::post('cert/update', [ResellerController::class,'certUpdate']);
+
+// 匯出 excel
+Route::get('cert/excel/export', [ResellerController::class,'export']);

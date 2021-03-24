@@ -202,7 +202,9 @@
       "routes/reseller.php",
       "app/Http/Controllers/ResellerController.php",
       "app/Models/Reseller.php",
-      "routes/api.php"
+      "routes/api.php",
+      "app/Http/Services/ShortUrlService.php",
+      "vendor/laravel"
     ]
     // getter setter 註解間的空格數量
     // "phpGettersSetters.spacesAfterParam": 1,

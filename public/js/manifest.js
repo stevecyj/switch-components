@@ -85,7 +85,7 @@
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/chunk/" + chunkId + ".js?v=" + {"Component1":"2f4fe812b926c1ac0118","Component2":"f5e7740d1e9638c4b4aa","Dashboard":"570434dbe95c883cbddc","Card":"b036b2d0644d992bef26","Chart":"b0429a2852f0b8d6839c","Table":"e7b7127eb30d8a78d270","Events":"ffa00aeac13d73cffe31","Counter":"52125a4c7432b197c8d0","AboutTailwind":"fc82da3f53aafb102b79","Error":"e9bd53f13d2e08d9fdbe"}[chunkId] + "";
+/******/ 			return "js/chunk/" + chunkId + ".js?v=" + {"Component1":"4b1f97c6569dc60af410","Component2":"cfadb1fc17ae708abfb9","Dashboard":"16402472fc68151cffd7","Card":"8e2d21d465552da7def0","Chart":"bcc5582699ff451e8e11","Table":"7797aacb1491d6c77925","Events":"d40d19a933d8d3435361","Counter":"0a3fe20b9c06ddf45c44","AboutTailwind":"fcf610cadf088655ac6e","Error":"9da5ec4c7557518a6052"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -183,7 +183,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/switch-components/public/";
+/******/ 		__webpack_require__.p = "/~steve_tsao/switch-components/public/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

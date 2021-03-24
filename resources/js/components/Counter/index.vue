@@ -6,6 +6,9 @@
         <button @click="getShortUrl">short Url</button> <br />
         <button @click="getUbikeOpenData">UbikeOpenData</button> <br />
         <button @click="TestResellerRoute">TestResellerRoute</button> <br />
+        <a target="_blank" href="http://10.249.33.229/~steve_tsao/switch-components/reseller/cert/excel/export">
+            <span>下載 excel</span>
+        </a>
     </div>
 </template>
 

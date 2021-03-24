@@ -10,6 +10,8 @@ use Carbon\Carbon;
 use Faker\Generator;
 use Illuminate\Container\Container;
 use Illuminate\Support\Str;
+use App\Exports\ResellersExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ResellerController extends Controller
 {
@@ -86,7 +88,7 @@ class ResellerController extends Controller
         |
         */
 
-        // $cert = Reseller::all();
+        $cert = Reseller::all();
 
         // foreach(Reseller::all() as $reseller){
         //     dump( $reseller->visitor . ':' . $reseller->main_group);
@@ -179,7 +181,7 @@ class ResellerController extends Controller
         // $reseller->forceDelete();
 
 
-        // dd($cert);
+        dd($cert);
         // return response($cert);
         // return response()->json($cert);
         // return $cert;
@@ -204,6 +206,12 @@ class ResellerController extends Controller
         $reseller = Reseller::findOrFail(11);
         $reseller->fill($data);
         $reseller->save();
+    }
+
+    // 📝匯出 excel
+    public function export()
+    {
+        return Excel::download(new ResellersExport, 'resellers.xlsx');
     }
 
     /**
