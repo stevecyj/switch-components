@@ -12,6 +12,7 @@ use Illuminate\Container\Container;
 use Illuminate\Support\Str;
 use App\Exports\ResellersExport;
 use Maatwebsite\Excel\Facades\Excel;
+use IPv4;
 
 class ResellerController extends Controller
 {
@@ -180,8 +181,12 @@ class ResellerController extends Controller
         // $reseller = Reseller::findOrFail(53);
         // $reseller->forceDelete();
 
+        // subnet ip
+        $sub = new IPv4\SubnetCalculator('192.168.112.203', 23);
+        dd($sub);
 
-        dd($cert);
+
+        // dd($cert);
         // return response($cert);
         // return response()->json($cert);
         // return $cert;
