@@ -182,8 +182,8 @@ class ResellerController extends Controller
         // $reseller->forceDelete();
 
         // subnet ip
-        $sub = new IPv4\SubnetCalculator('192.168.112.203', 23);
-        dd($sub);
+        // $sub = new IPv4\SubnetCalculator('192.168.112.203', 23);
+        // dd($sub);
 
 
         // dd($cert);
@@ -217,6 +217,44 @@ class ResellerController extends Controller
     public function export()
     {
         return Excel::download(new ResellersExport, 'resellers.xlsx');
+    }
+
+    // 📝獲取列表
+    public function getList(Request $request)
+    {
+        return Reseller::all();
+    }
+
+    // 📝獲取單筆記錄
+    public function getSingle(Request $request, $id)
+    {
+        return Reseller::find($id);
+    }
+
+    // 📝新增記錄
+    public function newSingle(Request $request)
+    {
+        return Reseller::create($request->all());
+    }
+
+    // 📝修改記錄
+    public function modify(Request $request, $id)
+    {
+        $reseller = Reseller::findOrFail($id);
+        $reseller->update($request->all());
+
+        return $reseller;
+    }
+
+    // 📝刪除記錄
+    public function strikeOut(Request $request, $id)
+    {
+        // Reseller::find($id)->delete();
+        $reseller = Reseller::findOrFail($id);
+        $reseller->delete();
+        if ($reseller->trashed()) {
+            dump('此記錄已刪除');
+        }
     }
 
     /**
