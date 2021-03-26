@@ -228,7 +228,13 @@ class ResellerController extends Controller
     // 📝獲取單筆記錄
     public function getSingle(Request $request, $id)
     {
-        return Reseller::find($id);
+        $reseller = Reseller::find($id);
+        // dd($reseller);
+        if ($reseller) {
+            return $reseller;
+        } else {
+            return response()->json(['error'=>'查無資料']);
+        }
     }
 
     // 📝新增記錄
