@@ -44,3 +44,6 @@ Route::put('list/{id}', [ResellerController::class,'modify']);
 
 // 刪除記錄
 Route::delete('list/{id}', [ResellerController::class,'strikeOut']);
+
+// api 驗證
+Route::post('register', [Auth\RegisterController::class,'register']);
