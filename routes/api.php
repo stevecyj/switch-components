@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\API\ProjectController;
+
 
 
 
@@ -24,6 +27,14 @@ use App\Models\User;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Secure CRUD
+Route::post('register', [AuthController::class, 'register']);
+Route::post('login', [AuthController::class, 'login']);
+
+
+Route::apiResource('projects', ProjectController::class)->middleware('auth:api');
+
 
 Route::match(['get', 'post'], 'fgp', function () {
     return 'This is a request from get or post';

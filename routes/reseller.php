@@ -46,4 +46,4 @@ Route::put('list/{id}', [ResellerController::class,'modify']);
 Route::delete('list/{id}', [ResellerController::class,'strikeOut']);
 
 // api 驗證
-Route::post('register', [Auth\RegisterController::class,'register']);
+// Route::post('register', [Auth\RegisterController::class,'register']);
