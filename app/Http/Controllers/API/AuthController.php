@@ -35,7 +35,11 @@ class AuthController extends Controller
             'password' => 'required'
         ]);
 
-        if (!Auth::attempt($loginData)) {
+        // if (!Auth::attempt($loginData)) {
+        //     return response(['message' => 'This User does not exist, check your details'], 400);
+        // }
+
+        if (!auth()->attempt($loginData)) {
             return response(['message' => 'This User does not exist, check your details'], 400);
         }
 
