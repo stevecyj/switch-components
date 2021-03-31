@@ -4,6 +4,9 @@
 <script>
 export default {
     name: 'component1',
+    created() {
+        alert(123456789999);
+    },
 };
 </script>
 <style scoped>
