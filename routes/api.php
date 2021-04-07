@@ -155,4 +155,4 @@ Route::get('getshorturl/{id}/shared-url', [UserController::class,'sharedUrl']);
 Route::get('ubike-open-data', [UserController::class,'openDataUbike']);
 
 // test ToolController
-Route::get('tool', [ToolController::class, 'updateProjectCost']);
+Route::post('tool', [ToolController::class, 'updateProjectCost']);
