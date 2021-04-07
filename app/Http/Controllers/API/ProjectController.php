@@ -33,7 +33,7 @@ class ProjectController extends Controller
 
         $validator = Validator::make($data, [
             'name' => 'required|max:255',
-            'description' => 'required|max:255',
+            'introduction' => 'required|max:255',
             'cost' => 'required'
         ]);
 
