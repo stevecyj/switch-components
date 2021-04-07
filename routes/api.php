@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ToolController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\ProjectController;
 
@@ -152,3 +153,6 @@ Route::get('getshorturl/{id}/shared-url', [UserController::class,'sharedUrl']);
 
 // 📝 get ubike open data
 Route::get('ubike-open-data', [UserController::class,'openDataUbike']);
+
+// test ToolController
+Route::get('tool', [ToolController::class, 'updateProjectCost']);
