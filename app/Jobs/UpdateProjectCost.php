@@ -32,6 +32,7 @@ class UpdateProjectCost implements ShouldQueue
      */
     public function handle()
     {
-        //
+        sleep(2);
+        $this->project->update(['cost' => $this->project->cost * random_int(2, 5)]);
     }
 }
