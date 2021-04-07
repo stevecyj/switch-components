@@ -18,6 +18,8 @@ class UpdateProjectCost implements ShouldQueue
      *
      * @return void
      */
+
+    protected $project;
     public function __construct($project) // 傳入 project
     {
         $this->project = $project;
