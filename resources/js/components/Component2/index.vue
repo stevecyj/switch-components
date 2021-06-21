@@ -10,11 +10,11 @@ export default {
         //     .then(res => console.log(res.data))
         //     .catch(err => console.log(err));
 
-        this.axios
-            .get(`${process.env.MIX_CORS}${process.env.MIX_DOG}`)
-            // .get(`${process.env.MIX_PARK}`)
-            .then(res => console.log(res.data))
-            .catch(err => console.log(err));
+        // this.axios
+        //     .get(`${process.env.MIX_CORS}${process.env.MIX_DOG}`)
+        //     // .get(`${process.env.MIX_PARK}`)
+        //     .then(res => console.log(res.data))
+        //     .catch(err => console.log(err));
     },
 };
 </script>
