@@ -95,7 +95,7 @@
                 '.js?v=' +
                 {
                     Component1: '4b1f97c6569dc60af410',
-                    Component2: 'cfadb1fc17ae708abfb9',
+                    Component2: '02c4327c7e87486025a3',
                     Dashboard: '16402472fc68151cffd7',
                     Card: '8e2d21d465552da7def0',
                     Chart: 'bcc5582699ff451e8e11',
